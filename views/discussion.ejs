@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="stylesheet" href="assets/css/reset.css" />
+   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+   <link href="https://www.cssscript.com/demo/sticky.css" rel="stylesheet" type="text/css">
+   <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+   <script src="jquery-3.6.0.min.js"></script>
+
+   <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+   <link rel="stylesheet" href="assets/css/discussion.css" />
+   <title>Welcome to StudGO</title>
+</head>
+
+<body>
+
+   <div class="side-bar">
+      <div class="logo-name-wrapper">
+         <div class="logo-name">
+            <img src="./assets/images/logo.jpg" class="logo" alt="logo app" srcset="" />
+
+         </div>
+         <button class="logo-name__button">
+            <i class="bx bx-arrow-from-right logo-name__icon" id="logo-name__icon"></i>
+         </button>
+
+      </div>
+
+
+      <ul class="features-list">
+         <a href="user-page.html">
+            <li class="features-item inbox active">
+               <i class="bx bxs-inbox features-item-icon inbox-icon"><span class="status"></span></i>
+               <span class="features-item-text">Home</span>
+               <span class="tooltip">Home</span>
+            </li>
+         </a>
+         <li class="features-item draft">
+            <i class="bx bx-file-blank features-item-icon"></i>
+            <span class="features-item-text">Profile</span>
+            <span class="tooltip">Profile</span>
+         </li>
+
+         <li class="features-item star">
+            <i class="bx bx-star features-item-icon"></i>
+            <span class="inbox-number">99</span>
+            <span class="features-item-text">Discussion Forum</span>
+            <span class="tooltip">Discussion Forum</span>
+         </li>
+         <li class="features-item sent">
+            <i class="bx bx-send features-item-icon"></i>
+            <span class="features-item-text">Roadmap</span>
+            <span class="tooltip">Roadmap</span>
+         </li>
+         <li class="features-item trash">
+            <i class="bx bx-trash features-item-icon"></i>
+            <span class="features-item-text">My Resources</span>
+            <span class="tooltip">My Resources</span>
+         </li>
+         <li class="features-item spam">
+            <i class="bx bx-message-square-error features-item-icon"></i>
+            <span class="features-item-text">Aptitude test</span>
+            <span class="tooltip">Aptitude test</span>
+         </li>
+         <li class="features-item spam">
+            <i class="bx bx-message-square-error features-item-icon"></i>
+            <span class="features-item-text">Planner</span>
+            <span class="tooltip">Planner</span>
+         </li>
+      </ul>
+
+      <ul class="category-list">
+         <div class="category-header">Message categories</div>
+         <li class="category-item">
+            <span class="category-item-status" style="background-color: #79d861"></span><span
+               class="category-item-text">My works</span><span class="category-item-number">9</span>
+            <span class="tooltip">My works</span>
+         </li>
+         <li class="category-item">
+            <span class="category-item-status" style="background-color: #c43c5d"></span><span
+               class="category-item-text">College</span><span class="category-item-number">43</span>
+            <span class="tooltip">College</span>
+         </li>
+
+      </ul>
+
+      <ul class="chat-list">
+         <div class="chat-header">recent chats</div>
+         <button class="chat-new-btn">
+            <i class="bx bxs-plus-circle chat-icon"></i>
+            <span class="chat-new-btn-text">Start New Chat</span>
+            <span class="tooltip">New Chat</span>
+         </button>
+
+         <li class="chat-item">
+            <span class="chat-item-avatar-wrapper has-message">
+               <img src="./assets/images/dolly.jpg" alt="avatar" class="chat-item-avatar" />
+            </span>
+            <span class="chat-item-name">Mehul</span>
+            <span class="chat-item-number">53</span>
+         </li>
+         <li class="chat-item">
+            <span class="chat-item-avatar-wrapper has-message">
+               <img src="./assets/images/np.jpg" alt="avatar" class="chat-item-avatar" />
+            </span>
+            <span class="chat-item-name">Nikunj</span>
+            <span class="chat-item-number">53</span>
+         </li>
+         <li class="chat-item">
+            <span class="chat-item-avatar-wrapper">
+               <img src="./assets/images/ua1.jpeg" alt="avatar" class="chat-item-avatar" />
+            </span>
+            <span class="chat-item-name">Utkrist Agrawal</span><span class="chat-item-status"
+               style="background-color: #79d861"></span>
+         </li>
+      </ul>
+   </div>
+   <div class="container">
+      <div style="margin:30px auto">
+         <div id="carbon-block"></div>
+         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+         <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px"
+            data-ad-client="ca-pub-2783044520727903" data-ad-slot="3025259193"></ins>
+         <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+         </script>
+
+      </div>
+
+
+      <nav>
+
+
+         <div class="cont_menu">
+            <div class="cont_titulo_menu" onclick="menu()">
+               <div class="cont_titulo">
+                  <h4>WELCOME PANTHER</h4>
+               </div>
+               <div class="cont_icon_menu">
+                  <img src="http://danysantos.hol.es/img/planet.png" alt="" />
+                  <div class="cont_circle_1"></div>
+                  <div class="cont_circle_2"></div>
+                  <div class="cont_circle_3"></div>
+                  <div class="cont_circle_4"></div>
+               </div>
+            </div>
+            <div class="cont_icon_trg disable">
+               <svg width="46px" height="38px" viewBox="0 0 46 38" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <defs>
+                     <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+                        <feOffset dx="0" dy="-2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                        <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1">
+                        </feGaussianBlur>
+                        <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0813575634 0"
+                           in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+                        <feMerge>
+                           <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                           <feMergeNode in="SourceGraphic"></feMergeNode>
+                        </feMerge>
+                     </filter>
+                  </defs>
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                     <polygon id="Triangle-1" fill="#FFFFFF" filter="url(#filter-1)" sketch:type="MSShapeGroup"
+                        points="23 7 39 24 7 24 "></polygon>
+                  </g>
+               </svg>
+            </div>
+            <div class="cont_drobpdown_menu disable">
+
+               <ul>
+                  <li><a href="#">View Profile</a></li>
+                  <li>
+                     <hr />
+                  </li>
+                  <li><a href="#">View Dashboard</a></li>
+                  <li>
+                     <hr />
+                  </li>
+                  <li><a href="#">Discussion</a></li>
+                  <li>
+                     <hr />
+                  </li>
+                  <li><a href="index.html">Logout</a></li>
+               </ul>
+
+            </div>
+         </div>
+
+
+
+      </nav>
+
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div id="content" class="content content-full-width">
+                  <!-- begin profile -->
+                  <div class="profile">
+                     <div class="profile-header">
+                        <!-- BEGIN profile-header-cover -->
+                        <div class="profile-header-cover"></div>
+                        <!-- END profile-header-cover -->
+                        <!-- BEGIN profile-header-content -->
+                        <div class="profile-header-content">
+                           <!-- BEGIN profile-header-img -->
+                           <div class="profile-header-img">
+                              <img src="assets/upload_images/<%= users.image %>" alt="">
+                           </div>
+                           <!-- END profile-header-img -->
+                           <!-- BEGIN profile-header-info -->
+                           <div class="profile-header-info">
+                              <h1 style="font-size: 4rem;">
+                                 <%= users.name %>
+                              </h1>
+                              <h2 style="margin-top:1rem;font-size:2rem">UX/UI + Frontend Developer</h2>
+
+                           </div>
+                           <!-- END profile-header-info -->
+                        </div>
+                        <!-- END profile-header-content -->
+                        <!-- BEGIN profile-header-tab -->
+                        <ul class="profile-header-tab nav nav-tabs">
+                           <li class="nav-item"><a href="#profile-post" class="nav-link active show"
+                                 data-toggle="tab">POSTS</a></li>
+                           <li class="nav-item"><a href="#profile-about" class="nav-link" data-toggle="tab">ABOUT</a>
+                           </li>
+                           <li class="nav-item"><a href="#profile-photos" class="nav-link" data-toggle="tab">PHOTOS</a>
+                           </li>
+                           <li class="nav-item"><a href="#profile-videos" class="nav-link" data-toggle="tab">VIDEOS</a>
+                           </li>
+                           <li class="nav-item"><a href="#profile-friends" class="nav-link"
+                                 data-toggle="tab">FRIENDS</a></li>
+                        </ul>
+                        <!-- END profile-header-tab -->
+                     </div>
+                  </div>
+                  <!-- end profile -->
+                  <!-- begin profile-content -->
+                  <div class="profile-content">
+                     <!-- begin tab-content -->
+                     <div class="tab-content p-0">
+                        <!-- begin #profile-post tab -->
+                        <div class="tab-pane fade active show" id="profile-post">
+                           <!-- begin timeline -->
+                           <ul class="timeline">
+                              <li>
+                                 <!-- begin timeline-time -->
+                                 <div class="timeline-time">
+                                    <span class="date">today</span>
+                                    <span class="time">04:20</span>
+                                 </div>
+                                 <!-- end timeline-time -->
+                                 <!-- begin timeline-icon -->
+                                 <div class="timeline-icon">
+                                    <a href="javascript:;">&nbsp;</a>
+                                 </div>
+                                 <!-- end timeline-icon -->
+                                 <!-- begin timeline-body -->
+                                 <div class="timeline-body">
+                                    <div class="timeline-header">
+                                       <span class="userimage"><img
+                                             src="https://bootdey.com/img/Content/avatar/avatar3.png" alt=""></span>
+                                       <span class="username"><a href="javascript:;">Sean Ngu</a> <small></small></span>
+                                       <span class="pull-right text-muted">18 Views</span>
+                                    </div>
+                                    <div class="timeline-content">
+                                       <p>
+                                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc faucibus turpis
+                                          quis tincidunt luctus.
+                                          Nam sagittis dui in nunc consequat, in imperdiet nunc sagittis.
+                                       </p>
+                                    </div>
+                                    <div class="timeline-likes">
+                                       <div class="stats-right">
+                                          <span class="stats-text">259 Shares</span>
+                                          <span class="stats-text">21 Comments</span>
+                                       </div>
+                                       <div class="stats">
+                                          <span class="fa-stack fa-fw stats-icon">
+                                             <i class="fa fa-circle fa-stack-2x text-danger"></i>
+                                             <i class="fa fa-heart fa-stack-1x fa-inverse t-plus-1"></i>
+                                          </span>
+                                          <span class="fa-stack fa-fw stats-icon">
+                                             <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                             <i class="fa fa-thumbs-up fa-stack-1x fa-inverse"></i>
+                                          </span>
+                                          <span class="stats-total">4.3k</span>
+                                       </div>
+                                    </div>
+                                    <div class="timeline-footer">
+                                       <a href="javascript:;" class="m-r-15 text-inverse-lighter"><i
+                                             class="fa fa-thumbs-up fa-fw fa-lg m-r-3"></i> Like</a>
+
+
+                                       <a href="javascript:;" class="m-r-15 text-inverse-lighter"><i
+                                             class="fa fa-comments fa-fw fa-lg m-r-3"></i> Comment</a>
+                                       <a href="javascript:;" class="m-r-15 text-inverse-lighter"><i
+                                             class="fa fa-share fa-fw fa-lg m-r-3"></i> Share</a>
+                                    </div>
+                                    <div class="timeline-comment-box">
+                                       <div class="user"><img src="https://bootdey.com/img/Content/avatar/avatar3.png">
+                                       </div>
+                                       <div class="input">
+                                          <form action="">
+                                             <div class="input-group">
+                                                <form action="/submit_comment" method="POST">
+                                                   <input type="text" name="comment" class="form-control rounded-corner"
+                                                      placeholder="Write a comment...">
+                                                   <span class="input-group-btn p-l-10">
+                                                      <button class="btn btn-primary f-s-12 rounded-corner"
+                                                         type="submit">Comment</button>
+                                                   </span>
+                                                </form>
+                                             </div>
+                                          </form>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- end timeline-body -->
+                              </li>
+                              <li>
+                                 <!-- begin timeline-time -->
+                                 <div class="timeline-time">
+                                    <span class="date">yesterday</span>
+                                    <span class="time">20:17</span>
+                                 </div>
+                                 <!-- end timeline-time -->
+                                 <!-- begin timeline-icon -->
+                                 <div class="timeline-icon">
+                                    <a href="javascript:;">&nbsp;</a>
+                                 </div>
+                                 <!-- end timeline-icon -->
+                                 <!-- begin timeline-body -->
+                                 <div class="timeline-body">
+                                    <div class="timeline-header">
+                                       <span class="userimage"><img
+                                             src="https://bootdey.com/img/Content/avatar/avatar3.png" alt=""></span>
+                                       <span class="username">Sean Ngu</span>
+                                       <span class="pull-right text-muted">82 Views</span>
+                                    </div>
+                                    <div class="timeline-content">
+                                       <p>Location: United States</p>
+                                    </div>
+                                    <div class="timeline-footer">
+                                       <a href="javascript:;" class="m-r-15 text-inverse-lighter"><i
+                                             class="fa fa-thumbs-up fa-fw fa-lg m-r-3"></i> Like</a>
+                                       <a href="javascript:;" class="m-r-15 text-inverse-lighter"><i
+                                             class="fa fa-comments fa-fw fa-lg m-r-3"></i> Comment</a>
+                                       <a href="javascript:;" class="m-r-15 text-inverse-lighter"><i
+                                             class="fa fa-share fa-fw fa-lg m-r-3"></i> Share</a>
+                                    </div>
+                                 </div>
+                                 <!-- end timeline-body -->
+                              </li>
+                              <li>
+                                 <!-- begin timeline-time -->
+                                 <div class="timeline-time">
+                                    <span class="date">24 February 2014</span>
+                                    <span class="time">08:17</span>
+                                 </div>
+                                 <!-- end timeline-time -->
+                                 <!-- begin timeline-icon -->
+                                 <div class="timeline-icon">
+                                    <a href="javascript:;">&nbsp;</a>
+                                 </div>
+                                 <!-- end timeline-icon -->
+                                 <!-- begin timeline-body -->
+                                 <div class="timeline-body">
+                                    <div class="timeline-header">
+                                       <span class="userimage"><img
+                                             src="https://bootdey.com/img/Content/avatar/avatar3.png" alt=""></span>
+                                       <span class="username">Sean Ngu</span>
+                                       <span class="pull-right text-muted">1,282 Views</span>
+                                    </div>
+                                    <div class="timeline-content">
+                                       <p class="lead">
+                                          <i class="fa fa-quote-left fa-fw pull-left"></i>
+                                          Quisque sed varius nisl. Nulla facilisi. Phasellus consequat sapien sit amet
+                                          nibh molestie placerat. Donec nulla quam, ullamcorper ut velit vitae, lobortis
+                                          condimentum magna. Suspendisse mollis in sem vel mollis.
+                                          <i class="fa fa-quote-right fa-fw pull-right"></i>
+                                       </p>
+                                    </div>
+                                    <div class="timeline-footer">
+                                       <a href="javascript:;" class="m-r-15 text-inverse-lighter"><i
+                                             class="fa fa-thumbs-up fa-fw fa-lg m-r-3"></i> Like</a>
+                                       <a href="javascript:;" class="m-r-15 text-inverse-lighter"><i
+                                             class="fa fa-comments fa-fw fa-lg m-r-3"></i> Comment</a>
+                                       <a href="javascript:;" class="m-r-15 text-inverse-lighter"><i
+                                             class="fa fa-share fa-fw fa-lg m-r-3"></i> Share</a>
+                                    </div>
+                                 </div>
+                                 <!-- end timeline-body -->
+                              </li>
+                              <li>
+                                 <!-- begin timeline-time -->
+                                 <div class="timeline-time">
+                                    <span class="date">10 January 2014</span>
+                                    <span class="time">20:43</span>
+                                 </div>
+                                 <!-- end timeline-time -->
+                                 <!-- begin timeline-icon -->
+                                 <div class="timeline-icon">
+                                    <a href="javascript:;">&nbsp;</a>
+                                 </div>
+                                 <!-- end timeline-icon -->
+                                 <!-- begin timeline-body -->
+                                 <div class="timeline-body">
+                                    <div class="timeline-header">
+                                       <span class="userimage"><img
+                                             src="https://bootdey.com/img/Content/avatar/avatar3.png" alt=""></span>
+                                       <span class="username">Sean Ngu</span>
+                                       <span class="pull-right text-muted">1,021,282 Views</span>
+                                    </div>
+                                    <div class="timeline-content">
+                                       <h4 class="template-title">
+                                          <i class="fa fa-map-marker text-danger fa-fw"></i>
+                                          795 Folsom Ave, Suite 600 San Francisco, CA 94107
+                                       </h4>
+                                       <p>In hac habitasse platea dictumst. Pellentesque bibendum id sem nec faucibus.
+                                          Maecenas molestie, augue vel accumsan rutrum, massa mi rutrum odio, id luctus
+                                          mauris nibh ut leo.</p>
+                                       <p class="m-t-20">
+                                          <img src="../assets/img/gallery/gallery-5.jpg" alt="">
+                                       </p>
+                                    </div>
+                                    <div class="timeline-footer">
+                                       <a href="javascript:;" class="m-r-15 text-inverse-lighter"><i
+                                             class="fa fa-thumbs-up fa-fw fa-lg m-r-3"></i> Like</a>
+                                       <a href="javascript:;" class="m-r-15 text-inverse-lighter"><i
+                                             class="fa fa-comments fa-fw fa-lg m-r-3"></i> Comment</a>
+                                       <a href="javascript:;" class="m-r-15 text-inverse-lighter"><i
+                                             class="fa fa-share fa-fw fa-lg m-r-3"></i> Share</a>
+                                    </div>
+                                 </div>
+                                 <!-- end timeline-body -->
+                              </li>
+                              <li>
+                                 <!-- begin timeline-icon -->
+                                 <div class="timeline-icon">
+                                    <a href="javascript:;">&nbsp;</a>
+                                 </div>
+                                 <!-- end timeline-icon -->
+                                 <!-- begin timeline-body -->
+                                 <div class="timeline-body">
+                                    Loading...
+                                 </div>
+                                 <!-- begin timeline-body -->
+                              </li>
+                           </ul>
+                           <!-- end timeline -->
+                        </div>
+                        <!-- end #profile-post tab -->
+                     </div>
+                     <!-- end tab-content -->
+                  </div>
+                  <!-- end profile-content -->
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </div>
+
+
+   <script type="text/javascript">
+      {
+         let sideBar = document.querySelector('.side-bar');
+         let arrowCollapse = document.querySelector('#logo-name__icon');
+         sideBar.onclick = () => {
+            sideBar.classList.toggle('collapse');
+            arrowCollapse.classList.toggle('collapse');
+            if (arrowCollapse.classList.contains('collapse')) {
+               arrowCollapse.classList =
+                  'bx bx-arrow-from-left logo-name__icon collapse';
+            } else {
+               arrowCollapse.classList = 'bx bx-arrow-from-right logo-name__icon';
+            }
+         };
+      }
+   </script>
+</body>
+<script>
+   try {
+      fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function (response) {
+         return true;
+      }).catch(function (e) {
+         var carbonScript = document.createElement("script");
+         carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CE7DC2JW&placement=wwwcssscriptcom";
+         carbonScript.id = "_carbonads_js";
+         document.getElementById("carbon-block").appendChild(carbonScript);
+      });
+   } catch (error) {
+      console.log(error);
+   }
+</script>
+<script>
+   (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+         (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+         m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+   })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+   ga('create', 'UA-46156385-1', 'cssscript.com');
+   ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript">
+
+   var c = 0;
+   function menu() {
+      if (c % 2 == 0) {
+         document.querySelector('.cont_drobpdown_menu').className = "cont_drobpdown_menu active";
+         document.querySelector('.cont_icon_trg').className = "cont_icon_trg active";
+         c++;
+      } else {
+         document.querySelector('.cont_drobpdown_menu').className = "cont_drobpdown_menu disable";
+         document.querySelector('.cont_icon_trg').className = "cont_icon_trg disable";
+         c++;
+      }
+   }
+</script>
+
+<script type="text/javascript">
+   const text = document.getElementById("quote");
+   const author = document.getElementById("author");
+   const tweetButton = document.getElementById("tweet");
+
+   const getNewQuote = async () => {
+
+      var url = "https://type.fit/api/quotes";
+
+
+      const response = await fetch(url);
+      console.log(typeof response);
+
+      const allQuotes = await response.json();
+      const indx = Math.floor(Math.random() * allQuotes.length);
+
+
+      const quote = allQuotes[indx].text;
+      const auth = allQuotes[indx].author;
+
+      if (auth == null) {
+         author = "Anonymous";
+      }
+
+      text.innerHTML = quote;
+      author.innerHTML = "~ " + auth;
+
+      tweetButton.href = "https://twitter.com/intent/tweet?text=" + quote + " ~ " + auth;
+
+   }
+
+   getNewQuote(); 
+</script>
+
+<script type="text/javascript">
+   var Calendar = function (t) {
+      this.divId = t.RenderID ? t.RenderID : '[data-render="calendar"]', this.DaysOfWeek = t.DaysOfWeek ? t.DaysOfWeek : ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], this.Months = t.Months ? t.Months : ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+      var e = new Date;
+      this.CurrentMonth = e.getMonth(), this.CurrentYear = e.getFullYear();
+      var r = t.Format;
+      this.f = "string" == typeof r ? r.charAt(0).toUpperCase() : "M"
+   };
+   Calendar.prototype.nextMonth = function () {
+      11 == this.CurrentMonth ? (this.CurrentMonth = 0, this.CurrentYear = this.CurrentYear + 1) : this.CurrentMonth = this.CurrentMonth + 1, this.divId = '[data-active="false"] .render', this.showCurrent()
+   }, Calendar.prototype.prevMonth = function () {
+      0 == this.CurrentMonth ? (this.CurrentMonth = 11, this.CurrentYear = this.CurrentYear - 1) : this.CurrentMonth = this.CurrentMonth - 1, this.divId = '[data-active="false"] .render', this.showCurrent()
+   }, Calendar.prototype.previousYear = function () {
+      this.CurrentYear = this.CurrentYear - 1, this.showCurrent()
+   }, Calendar.prototype.nextYear = function () {
+      this.CurrentYear = this.CurrentYear + 1, this.showCurrent()
+   }, Calendar.prototype.showCurrent = function () {
+      this.Calendar(this.CurrentYear, this.CurrentMonth)
+   }, Calendar.prototype.checkActive = function () {
+      1 == document.querySelector(".months").getAttribute("class").includes("active") ? document.querySelector(".months").setAttribute("class", "months") : document.querySelector(".months").setAttribute("class", "months active"), "true" == document.querySelector(".month-a").getAttribute("data-active") ? (document.querySelector(".month-a").setAttribute("data-active", !1), document.querySelector(".month-b").setAttribute("data-active", !0)) : (document.querySelector(".month-a").setAttribute("data-active", !0), document.querySelector(".month-b").setAttribute("data-active", !1)), setTimeout(function () {
+         document.querySelector(".calendar .header").setAttribute("class", "header active")
+      }, 200), document.querySelector("body").setAttribute("data-theme", this.Months[document.querySelector('[data-active="true"] .render').getAttribute("data-month")].toLowerCase())
+   }, Calendar.prototype.Calendar = function (t, e) {
+      "number" == typeof t && (this.CurrentYear = t), "number" == typeof t && (this.CurrentMonth = e);
+      var r = (new Date).getDate(),
+         n = (new Date).getMonth(),
+         a = (new Date).getFullYear(),
+         o = new Date(t, e, 1).getDay(),
+         i = new Date(t, e + 1, 0).getDate(),
+         u = 0 == e ? new Date(t - 1, 11, 0).getDate() : new Date(t, e, 0).getDate(),
+         s = "<span>" + this.Months[e] + " &nbsp; " + t + "</span>",
+         d = '<div class="table">';
+      d += '<div class="row head">';
+      for (var c = 0; c < 7; c++) d += '<div class="cell">' + this.DaysOfWeek[c] + "</div>";
+      d += "</div>";
+      for (var h, l = dm = "M" == this.f ? 1 : 0 == o ? -5 : 2, v = (c = 0, 0); v < 6; v++) {
+         d += '<div class="row">';
+         for (var m = 0; m < 7; m++) {
+            if ((h = c + dm - o) < 1) d += '<div class="cell disable">' + (u - o + l++) + "</div>";
+            else if (h > i) d += '<div class="cell disable">' + l++ + "</div>";
+            else {
+               d += '<div class="cell' + (r == h && this.CurrentMonth == n && this.CurrentYear == a ? " active" : "") + '"><span>' + h + "</span></div>", l = 1
+            }
+            c % 7 == 6 && h >= i && (v = 10), c++
+         }
+         d += "</div>"
+      }
+      d += "</div>", document.querySelector('[data-render="month-year"]').innerHTML = s, document.querySelector(this.divId).innerHTML = d, document.querySelector(this.divId).setAttribute("data-date", this.Months[e] + " - " + t), document.querySelector(this.divId).setAttribute("data-month", e)
+   }, window.onload = function () {
+      var t = new Calendar({
+         RenderID: ".render-a",
+         Format: "M"
+      });
+      t.showCurrent(), t.checkActive();
+      var e = document.querySelectorAll(".header [data-action]");
+      for (i = 0; i < e.length; i++) e[i].onclick = function () {
+         if (document.querySelector(".calendar .header").setAttribute("class", "header"), "true" == document.querySelector(".months").getAttribute("data-loading")) return document.querySelector(".calendar .header").setAttribute("class", "header active"), !1;
+         var e;
+         document.querySelector(".months").setAttribute("data-loading", "true"), this.getAttribute("data-action").includes("prev") ? (t.prevMonth(), e = "left") : (t.nextMonth(), e = "right"), t.checkActive(), document.querySelector(".months").setAttribute("data-flow", e), document.querySelector('.month[data-active="true"]').addEventListener("webkitTransitionEnd", function () {
+            document.querySelector(".months").removeAttribute("data-loading")
+         }), document.querySelector('.month[data-active="true"]').addEventListener("transitionend", function () {
+            document.querySelector(".months").removeAttribute("data-loading")
+         })
+      }
+   };
+</script>
+
+</html>

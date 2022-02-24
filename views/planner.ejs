@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+   <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://www.cssscript.com/demo/sticky.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <script src="jquery-3.6.0.min.js"></script>
+    
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/planner.css" />
+    <title>Success Planner</title>
+  </head>
+  <body>
+
+    <div class="side-bar">
+      <div class="logo-name-wrapper">
+        <div class="logo-name">
+          <img
+            src="./assets/images/logo.jpg"
+            class="logo"
+            alt="logo app"
+            srcset=""
+          />
+          
+        </div>
+        <button class="logo-name__button">
+          <i
+            class="bx bx-arrow-from-right logo-name__icon"
+            id="logo-name__icon"
+          ></i>
+        </button>
+     
+      </div>
+
+
+      <ul class="features-list">
+        <a href="user-page.html"><li class="features-item inbox active">
+          <i class="bx bxs-inbox features-item-icon inbox-icon"
+            ><span class="status"></span
+          ></i>
+          <span class="features-item-text">Home</span>
+          <span class="tooltip">Home</span>
+        </li>
+       </a>
+
+       <a href="user-profile.html">
+        <li class="features-item draft">
+          <i class="bx bx-file-blank features-item-icon"></i>
+          <span class="features-item-text">Profile</span>
+          <span class="tooltip">Profile</span>
+        </li>
+    </a>
+    <a href="discussion.html"> 
+        <li class="features-item star">
+          <i class="bx bx-star features-item-icon"></i>
+          <span class="inbox-number">99</span>
+          <span class="features-item-text">Discussion Forum</span>
+          <span class="tooltip">Discussion Forum</span>
+        </li>
+    </a>
+
+    <a href="roadmap.html"> 
+        <li class="features-item sent">
+          <i class="bx bx-send features-item-icon"></i>
+          <span class="features-item-text">Roadmap</span>
+          <span class="tooltip">Roadmap</span>
+        </li>
+    </a>
+
+    <a href="#"> 
+        <li class="features-item trash">
+          <i class="bx bx-trash features-item-icon"></i>
+          <span class="features-item-text">My Resources</span>
+          <span class="tooltip">My Resources</span>
+        </li>
+    </a>
+
+    <a href="#"> 
+        <li class="features-item spam">
+          <i class="bx bx-message-square-error features-item-icon"></i>
+          <span class="features-item-text">Aptitude test</span>
+          <span class="tooltip">Aptitude test</span>
+        </li>
+    </a>
+
+    <a href="planner.html"> 
+        <li class="features-item spam">
+          <i class="bx bx-message-square-error features-item-icon"></i>
+          <span class="features-item-text">Planner</span>
+          <span class="tooltip">Planner</span>
+        </li>
+      </a>
+      </ul>
+    
+
+      <ul class="category-list">
+        <div class="category-header">Message categories</div>
+        <li class="category-item">
+          <span
+            class="category-item-status"
+            style="background-color: #79d861"
+          ></span
+          ><span class="category-item-text">My works</span
+          ><span class="category-item-number">9</span>
+          <span class="tooltip">My works</span>
+        </li>
+        <li class="category-item">
+          <span
+            class="category-item-status"
+            style="background-color: #c43c5d"
+          ></span
+          ><span class="category-item-text">College</span
+          ><span class="category-item-number">43</span>
+          <span class="tooltip">College</span>
+        </li>
+        
+      </ul>
+
+      <ul class="chat-list">
+        <div class="chat-header">recent chats</div>
+        <button class="chat-new-btn">
+          <i class="bx bxs-plus-circle chat-icon"></i>
+          <span class="chat-new-btn-text">Start New Chat</span>
+          <span class="tooltip">New Chat</span>
+        </button>
+
+        <li class="chat-item">
+          <span class="chat-item-avatar-wrapper has-message">
+            <img
+              src="./assets/images/dolly.jpg"
+              alt="avatar"
+              class="chat-item-avatar"
+            />
+          </span>
+          <span class="chat-item-name">Mehul</span>
+          <span class="chat-item-number">53</span>
+        </li>
+        <li class="chat-item">
+          <span class="chat-item-avatar-wrapper has-message">
+            <img
+              src="./assets/images/np.jpg"
+              alt="avatar"
+              class="chat-item-avatar"
+            />
+          </span>
+          <span class="chat-item-name">Nikunj</span>
+          <span class="chat-item-number">53</span>
+        </li>
+        <li class="chat-item">
+          <span class="chat-item-avatar-wrapper">
+            <img
+              src="./assets/images/ua1.jpeg"
+              alt="avatar"
+              class="chat-item-avatar"
+            />
+          </span>
+          <span class="chat-item-name">Utkrist Agrawal</span
+          ><span
+            class="chat-item-status"
+            style="background-color: #79d861"
+          ></span>
+        </li>
+      </ul>
+    </div>
+    <div class="container"><div style="margin:30px auto"><div id="carbon-block"></div>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-2783044520727903"
+     data-ad-slot="3025259193"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</div>
+
+
+<nav>
+   
+  
+    <div class="cont_menu">
+      <div class="cont_titulo_menu" onclick="menu()">
+    <div class="cont_titulo">
+        <h4>WELCOME PANTHER</h4>
+        </div>
+        <div class="cont_icon_menu">
+       <img src="http://danysantos.hol.es/img/planet.png" alt="" />
+    <div class="cont_circle_1"></div>
+    <div class="cont_circle_2"></div>
+    <div class="cont_circle_3"></div>
+    <div class="cont_circle_4"></div>
+        </div>
+      </div>
+    <div class="cont_icon_trg disable">
+    <svg width="46px" height="38px" viewBox="0 0 46 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  >
+        <defs>
+            <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+                <feOffset dx="0" dy="-2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0813575634 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+                <feMerge>
+                    <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                    <feMergeNode in="SourceGraphic"></feMergeNode>
+                </feMerge>
+            </filter>
+        </defs>
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+            <polygon id="Triangle-1" fill="#FFFFFF" filter="url(#filter-1)" sketch:type="MSShapeGroup" points="23 7 39 24 7 24 "></polygon>
+        </g>
+    </svg></div>
+    <div class="cont_drobpdown_menu disable" >
+    
+      <ul>
+      <li><a href="#">View Profile</a></li>
+     <li><hr /></li>
+      <li><a href="#">View Dashboard</a></li>
+      <li><hr /></li>
+      <li><a href="#">Discussion</a></li>
+      <li><hr /></li>
+      <li><a href="index.html">Logout</a></li>
+    </ul>
+      
+      </div> 
+      </div> 
+    
+     
+
+</nav>
+
+<div class="page-content">
+    <div class="header">Today Tasks</div>
+    <!-- contnet categories starts -->
+    <div class="content-categories">
+      <div class="label-wrapper">
+        <input class="nav-item" name="nav" type="radio" id="opt-1" />
+        <label class="category" for="opt-1">All</label>
+      </div>
+      <div class="label-wrapper">
+        <input class="nav-item" name="nav" type="radio" id="opt-2" checked />
+        <label class="category" for="opt-2">Important</label>
+      </div>
+      <div class="label-wrapper">
+        <input class="nav-item" name="nav" type="radio" id="opt-3" />
+        <label class="category" for="opt-3">Notes</label>
+      </div>
+      <div class="label-wrapper">
+        <input class="nav-item" name="nav" type="radio" id="opt-4" />
+        <label class="category" for="opt-4">Links</label>
+      </div>
+    </div>
+    <!--  -->
+    <!-- contemt categories ends -->
+    <!-- tasks wrapper starts -->
+    <div class="tasks-wrapper">
+      <div class="task">
+        <input class="task-item" name="task" type="checkbox" id="item-1" checked />
+        <label for="item-1">
+          <span class="label-text">Dashboard Design Implementation</span>
+        </label>
+        <span class="tag approved">Approved</span>
+      </div>
+      <div class="task">
+        <input class="task-item" name="task" type="checkbox" id="item-2" checked />
+        <label for="item-2">
+          <span class="label-text">Create a userflow</span>
+        </label>
+        <span class="tag progress">In Progress</span>
+      </div>
+      <div class="task">
+        <input class="task-item" name="task" type="checkbox" id="item-3" />
+        <label for="item-3">
+          <span class="label-text">Application Implementation</span>
+        </label>
+        <span class="tag review">In Review</span>
+      </div>
+      <div class="task">
+        <input class="task-item" name="task" type="checkbox" id="item-4" />
+        <label for="item-4">
+          <span class="label-text">Create a Dashboard Design</span>
+        </label>
+        <span class="tag progress">In Progress</span>
+      </div>
+      <div class="task">
+        <input class="task-item" name="task" type="checkbox" id="item-5" />
+        <label for="item-5">
+          <span class="label-text">Create a Web Application Design</span>
+        </label>
+        <span class="tag approved">Approved</span>
+      </div>
+      <div class="task">
+        <input class="task-item" name="task" type="checkbox" id="item-6" />
+        <label for="item-6">
+          <span class="label-text">Interactive Design</span>
+        </label>
+        <span class="tag review">In Review</span>
+      </div>
+      <div class="header upcoming">Upcoming Tasks</div>
+      <div class="task">
+        <input class="task-item" name="task" type="checkbox" id="item-7" />
+        <label for="item-7">
+          <span class="label-text">Dashboard Design Implementation</span>
+        </label>
+        <span class="tag waiting">Waiting</span>
+      </div>
+      <div class="task">
+        <input class="task-item" name="task" type="checkbox" id="item-8" />
+        <label for="item-8">
+          <span class="label-text">Create a userflow</span>
+        </label>
+        <span class="tag waiting">Waiting</span>
+      </div>
+      <div class="task">
+        <input class="task-item" name="task" type="checkbox" id="item-9" />
+        <label for="item-9">
+          <span class="label-text">Application Implementation</span>
+        </label>
+        <span class="tag waiting">Waiting</span>
+      </div>
+      <div class="task">
+        <input class="task-item" name="task" type="checkbox" id="item-10" />
+        <label for="item-10">
+          <span class="label-text">Create a Dashboard Design</span>
+        </label>
+        <span class="tag waiting">Waiting</span>
+      </div>
+    </div>
+    <!-- tasks wrapper ends -->
+  </div>
+  <!--  -->
+  <!-- page content ends -->
+<!-- right bar starts -->
+<div class="right-bar">
+    <!-- <div class="top-part">
+      <img class="feather feather-users" src="svg/users.svg" alt="" />
+      <div class="count">6</div>
+    </div> -->
+    <div class="header">Schedule</div>
+    <div class="right-content">
+      <div class="task-box yellow">
+        <div class="description-task">
+          <div class="time">08:00 - 09:00 AM</div>
+          <div class="task-name">Product Review</div>
+        </div>
+        <div class="more-button"></div>
+        
+      </div>
+      <div class="task-box blue">
+        <div class="description-task">
+          <div class="time">10:00 - 11:00 AM</div>
+          <div class="task-name">Design Meeting</div>
+        </div>
+        <div class="more-button"></div>
+       
+      </div>
+      <div class="task-box red">
+        <div class="description-task">
+          <div class="time">01:00 - 02:00 PM</div>
+          <div class="task-name">Team Meeting</div>
+        </div>
+        <div class="more-button"></div>
+       
+      </div>
+      <div class="task-box green">
+        <div class="description-task">
+          <div class="time">03:00 - 04:00 PM</div>
+          <div class="task-name">Release Event</div>
+        </div>
+        <div class="more-button"></div>
+        
+      </div>
+    
+      <div class="task-box yellow">
+        <div class="description-task">
+          <div class="time">11:00 - 12:00 PM</div>
+          <div class="task-name">Practise</div>
+        </div>
+        <div class="more-button"></div>
+        
+      </div>
+      <div class="task-box green">
+        <div class="description-task">
+          <div class="time">03:00 - 04:00 PM</div>
+          <div class="task-name">Release Event</div>
+        </div>
+        <div class="more-button"></div>
+        
+      </div>
+    </div>
+  </div>
+  <!-- right bar ends -->
+    
+
+
+</div>
+
+
+<script type="text/javascript">
+      {
+        let sideBar = document.querySelector('.side-bar');
+        let arrowCollapse = document.querySelector('#logo-name__icon');
+        sideBar.onclick = () => {
+          sideBar.classList.toggle('collapse');
+          arrowCollapse.classList.toggle('collapse');
+          if (arrowCollapse.classList.contains('collapse')) {
+            arrowCollapse.classList =
+              'bx bx-arrow-from-left logo-name__icon collapse';
+          } else {
+            arrowCollapse.classList = 'bx bx-arrow-from-right logo-name__icon';
+          }
+        };
+      }
+</script>
+
+<script type="text/javascript">
+    (function () {
+  "use strict";
+
+  // define variables
+  var items = document.querySelectorAll(".timeline li");
+
+  // check if an element is in viewport
+  // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+  function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  function callbackFunc() {
+    for (var i = 0; i < items.length; i++) {
+      if (isElementInViewport(items[i])) {
+        items[i].classList.add("in-view");
+      }
+    }
+  }
+
+  // listen for events
+  window.addEventListener("load", callbackFunc);
+  window.addEventListener("resize", callbackFunc);
+  window.addEventListener("scroll", callbackFunc);
+})();
+
+</script>
+
+
+
+
+</body>
+
+
+<script>
+try {
+  fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+    return true;
+  }).catch(function(e) {
+    var carbonScript = document.createElement("script");
+    carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CE7DC2JW&placement=wwwcssscriptcom";
+    carbonScript.id = "_carbonads_js";
+    document.getElementById("carbon-block").appendChild(carbonScript);
+  });
+} catch (error) {
+  console.log(error);
+}
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46156385-1', 'cssscript.com');
+  ga('send', 'pageview');
+
+</script>
+
+<script type="text/javascript">
+
+var c = 0;
+function menu(){
+  if(c % 2 == 0) {
+document.querySelector('.cont_drobpdown_menu').className = "cont_drobpdown_menu active";    
+document.querySelector('.cont_icon_trg').className = "cont_icon_trg active";    
+c++; 
+  }else{
+document.querySelector('.cont_drobpdown_menu').className = "cont_drobpdown_menu disable";        
+document.querySelector('.cont_icon_trg').className = "cont_icon_trg disable";        
+c++;
+  }
+}
+</script>
+
+
+
+
+</html>

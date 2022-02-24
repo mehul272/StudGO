@@ -1,0 +1,61 @@
+// app.get("/auth/google",
+//     passport.authenticate('google', { scope: ["profile"] })
+// );
+
+// app.get("/auth/google/secrets",
+//     passport.authenticate('google', { failureRedirect: "/login" }),
+//     function (req, res) {
+//         // Successful authentication, redirect to secrets.
+//         console.log(my_id)
+//         User.findOne({ 'name': my_id }, function (err, user) {
+//             if (err) {
+//                 console.log(err)
+//             }
+//             else {
+//                 if (req.isAuthenticated()) {
+//                     res.render("user-page.ejs", { users: user })
+//                 }
+//                 else {
+//                     res.redirect('/login')
+//                 }
+//             }
+//         })
+//     });
+
+
+// global.my_id = "";
+
+// //google auth
+// passport.use(new GoogleStrategy({
+//     clientID: process.env.ID,
+//     clientSecret: process.env.CLIENT_SECRET,
+//     callbackURL: "http://localhost:3000/auth/google/secrets",
+//     userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo"
+// },
+//     function (accessToken, refreshToken, profile, cb) {
+
+//         // console.log(profile);
+//         my_id = profile.id/number;
+//         console.log(my_id);
+//         console.log(profile.displayName)
+//         User.findOrCreate({ username: profile.displayName, name: profile.id/number }, function (err, user) {
+//             // User.findOrCreate({ googleId: profile.id, username: profile.id}, function (err, user) {
+
+//             return cb(err, user);
+//         });
+//     }
+// ));
+
+
+//initializing passport
+app.use(passport.initialize());
+app.use(passport.session())
+
+// app.use(express.json());
+// app.use(express.urlencoded({ extended: true }));
+
+app.use(session({
+    secret: "Hello.",
+    resave: false,
+    saveUninitialized: false,
+}))
